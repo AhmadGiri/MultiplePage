@@ -58,8 +58,9 @@ window.addEventListener("scroll", () => {
         pageContent.classList.remove("show");
         setTimeout(() => {
           window.location = link.href;
-        }, 400); // sesuai durasi animasi keluar
+        }, 400);
       });
     }
   });
+
 });    
