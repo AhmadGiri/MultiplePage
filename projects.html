@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Multiple Page-Projects</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-gradient-to-br from-white to-orange-50 text-gray-800">
+
+     <header id="navbar" class="fixed w-full flex flex-row justify-between p-4 z-50 transition-all duration-300">
+      <div class="flex items-center">
+        <img
+          class="w-10 h-10 object-contain"
+          src="img/nemtas.png"
+          alt="Logo Nemtas"
+        />
+      </div>
+
+      <nav class="hidden md:flex items-center gap-8">
+        <a
+          href="index.html"
+          class="text-slate-800 hover:text-orange-500 font-medium transition relative group"
+        >
+          Home
+          <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-orange-500 transition-all duration-300 group-hover:w-full"></span>
+        </a>
+        <a
+          href="about.html"
+          class="text-slate-800 hover:text-orange-500 font-medium transition relative group"
+        >
+          About Me
+          <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-orange-500 transition-all duration-300 group-hover:w-full"></span>
+        </a>
+        <a
+          href="gallery.html"
+          class="text-slate-800 hover:text-orange-500 font-medium transition relative group"
+        >
+          Gallery
+          <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-orange-500 transition-all duration-300 group-hover:w-full"></span>
+        </a>
+        <a
+          href="project.html"
+          class="text-orange-500 hover:text-slate-800 font-medium transition relative group"
+        >
+          Project
+          <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-orange-500 transition-all duration-300 group-hover:w-full"></span>
+        </a>
+        <a
+          href="contact.html"
+          class="text-slate-800 hover:text-orange-500 font-medium transition relative group"
+        >
+          Contact
+          <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-orange-500 transition-all duration-300 group-hover:w-full"></span>
+        </a>
+      </nav>
+
+      <div class="md:hidden flex items-center">
+        <button id="menu-btn" class="relative z-50">
+          <div class="w-8 h-0.5 bg-gray-800 mb-1.5 transition-transform duration-300" id="bar1"></div>
+          <div class="w-8 h-0.5 bg-gray-800 mb-1.5 transition-all duration-300" id="bar2"></div>
+          <div class="w-8 h-0.5 bg-gray-800 transition-all duration-300" id="bar3"></div>
+        </button>
+      </div>
+
+      <div>
+        <img
+          class="w-12 h-12 object-contain p-1"
+          src="img/RPL.png"
+          alt="Logo Portofolio"
+        />
+      </div>
+    </header>
+        <div id="mobile-menu" class="fixed inset-0 bg-white z-40 flex flex-col items-center justify-center space-y-8 transition-all duration-500 transform translate-y-full">
+      <a href="index.html" class="text-2xl font-medium text-slate-800 hover:text-orange-500 transition">Home</a>
+      <a href="about.html" class="text-2xl font-medium text-slate-800 hover:text-orange-500 transition">About Me</a>
+      <a href="gallery.html" class="text-2xl font-medium text-slate-800 hover:text-orange-500 transition">Gallery</a>
+      <a href="projects.html" class="text-2xl font-medium text-orange-500 hover:text-slate-800 transition">Projects</a>
+      <a href="contact.html" class="text-2xl font-medium text-slate-800 hover:text-orange-500 transition">Contact</a>
+    </div>
+<main id="page-content" class="page-transition">
+<section class="max-w-6xl mx-auto px-6 py-24">
+  <h2 class="text-3xl text-orange-500 text-center font-bold mb-2">My Project.</h2>
+  <p class="text-lg text-gray-600 text-center mb-8">
+    See what I've been working on.<br>Click the image to see the description.
+  </p>
+  <div class="space-y-8">
+    <details class="group bg-orange-200 rounded-2xl overflow-hidden">
+      <summary class="cursor-pointer list-none">
+        <img src="img/project1.jpg" alt="Project 1"
+          class="w-full h-64 md:h-128 object-cover" />
+      </summary>
+      <div class="p-4 text-slate-800">
+        This is my 2D platforming game, I made this game with my two friends, Dennis and Geo. It can be played on Mobile or PC, let me know if you wanna play the game.
+      </div>
+ </details>
+    <details class="group bg-orange-200 rounded-xl overflow-hidden">
+  <summary class="cursor-pointer list-none">
+    <img src="img/project2.jpg" alt="Project 2"
+      class="w-full h-64 md:h-128 object-cover" />
+  </summary>
+  <div class="p-4 text-slate-800 space-y-3">
+    "This is a tutorial I made for creating a card slider using Swiper JS in Acode, you can watch it on YouTube by clicking the button below.".
+    <a href="https://youtu.be/bfRlmnBpBEI" 
+       target="_blank"
+       class="block mx-auto w-fit mt-4 bg-orange-300 text-slate-800 font-semibold text-center text-sm px-4 py-2 rounded-lg shadow hover:bg-orange-600 transition">Watch on YouTube
+    </a>
+  </div>
+</details>
+    <h2 class="text-3xl text-orange-500 text-center font-bold mt-30 mb-2">In Progress.</h2>
+    <p class="text-lg text-gray-600 text-center mb-8">
+      ideas and experiments that are still being built into complete projects.
+    </p>
+    <details class="group bg-orange-200 rounded-2xl overflow-hidden">
+      <summary class="cursor-pointer list-none">
+        <img src="img/project3.jpg" alt="Project 3"
+          class="w-full h-64 md:h-128 object-cover" />
+      </summary>
+      <div class="p-4 text-slate-800">
+        IoT project in progress – stay tuned for updates!
+      </div>
+    </details>
+  </div>
+</section>
+</main>
+<div class="justify-center border-t border-gray-800 max-w-5xl mx-auto mb-8"></div>
+<footer class="text-orange-500 py-6 px-4">
+  <div class="max-w-sm mx-auto flex justify-evenly items-start">
+    <div class="text-sm font-semibold whitespace-nowrap">
+      © Ahmad Giri Saptanu
+    </div>
+    <div class="flex gap-12 text-sm text-center">
+      <div>
+        <h4 class="font-semibold mb-2">Elsewhere</h4>
+        <ul class="space-y-1">
+          <li><a href="https://www.figma.com/@ahmadgiri" class="hover:underline">Figma</a></li>
+          <li><a href="https://github.com/AhmadGiri" class="hover:underline">Github</a></li>
+          <li><a href="#" class="hover:underline">LinkedIn</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+  <script src="js/script.js"></script>
+</body>
+</html>

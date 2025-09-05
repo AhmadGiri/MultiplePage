@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Multiple Page-Home</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-gradient-to-br from-white to-orange-50 text-gray-800">
+
+    <header id="navbar" class="fixed w-full flex flex-row justify-between p-4 z-50 transition-all duration-300">
+      <div class="flex items-center">
+        <img
+          class="w-10 h-10 object-contain"
+          src="img/nemtas.png"
+          alt="Logo Nemtas"
+        />
+      </div>
+
+      <nav class="hidden md:flex items-center gap-8">
+        <a
+          href="index.html"
+          class="text-orange-500 hover:text-slate-800 font-medium transition relative group"
+        >
+          Home
+          <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-orange-500 transition-all duration-300 group-hover:w-full"></span>
+        </a>
+        <a
+          href="about.html"
+          class="text-slate-800 hover:text-orange-500 font-medium transition relative group"
+        >
+          About Me
+          <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-orange-500 transition-all duration-300 group-hover:w-full"></span>
+        </a>
+        <a
+          href="gallery.html"
+          class="text-slate-800 hover:text-orange-500 font-medium transition relative group"
+        >
+          Gallery
+          <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-orange-500 transition-all duration-300 group-hover:w-full"></span>
+        </a>
+        <a
+          href="projects.html"
+          class="text-slate-800 hover:text-orange-500 font-medium transition relative group"
+        >
+          Projects
+          <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-orange-500 transition-all duration-300 group-hover:w-full"></span>
+        </a>
+        <a
+          href="contact.html"
+          class="text-slate-800 hover:text-orange-500 font-medium transition relative group"
+        >
+          Contact
+          <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-orange-500 transition-all duration-300 group-hover:w-full"></span>
+        </a>
+      </nav>
+
+      <div class="md:hidden flex items-center">
+        <button id="menu-btn" class="relative z-50">
+          <div class="w-8 h-0.5 bg-gray-800 mb-1.5 transition-transform duration-300" id="bar1"></div>
+          <div class="w-8 h-0.5 bg-gray-800 mb-1.5 transition-all duration-300" id="bar2"></div>
+          <div class="w-8 h-0.5 bg-gray-800 transition-all duration-300" id="bar3"></div>
+        </button>
+      </div>
+
+      <div>
+        <img
+          class="w-12 h-12 object-contain p-1"
+          src="img/RPL.png"
+          alt="Logo RPL"
+        />
+      </div>
+    </header>
+      <div id="mobile-menu" class="fixed inset-0 bg-white z-40 flex flex-col items-center justify-center space-y-8 transition-all duration-500 transform translate-y-full">
+      <a href="index.html" class="text-2xl font-medium text-orange-500 hover:text-slate-800 transition">Home</a>
+      <a href="about.html" class="text-2xl font-medium text-slate-800 hover:text-orange-500 transition">About Me</a>
+      <a href="gallery.html" class="text-2xl font-medium text-slate-800 hover:text-orange-500 transition">Gallery</a>
+      <a href="projects.html" class="text-2xl font-medium text-slate-800 hover:text-orange-500 transition">Projects</a>
+      <a href="contact.html" class="text-2xl font-medium text-slate-800 hover:text-orange-500 transition">Contact</a>
+    </div>
+ <main id="page-content" class="page-transition">   
+<section class="py-24 min-h-screen flex flex-col md:flex-row items-center justify-center bg-gradient-to-br from-white to-orange-50 px-6 md:px-20">
+  <div class="order-1 md:order-2 flex justify-center mb-8 md:mb-0">
+    <img src="img/hero.png" alt="Hero"
+         class="w-64 md:w-80 lg:w-[28rem] xl:w-[32rem] object-contain drop-shadow-lg">
+  </div>
+  <div class="order-2 md:order-1 flex-1 text-center md:text-left space-y-6">
+    <h1 class="font-bold text-gray-800 text-5xl md:text-6xl leading-tight">
+      WELCOME TO  <br><span class="text-orange-500">  MY WEBSITE</span>
+    </h1>
+    <p class="text-gray-600 text-lg md:text-xl max-w-lg mx-auto md:mx-0">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.  
+    </p>
+    <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+      <a href="about.html" class="px-6 py-3 bg-orange-500 text-white font-medium rounded-xl shadow-md hover:bg-orange-700 transition">
+        About
+      </a>
+      <a href="projects.html" class="px-6 py-3 border border-orange-500 text-orange-500 font-medium rounded-xl hover:bg-orange-500 hover:text-white transition">
+        View Projects
+      </a>
+    </div>
+  </div>
+<br>
+</section>
+</main>
+<div class="justify-center border-t border-gray-800 mx-auto mb-8 "></div>
+<footer class="text-orange-500 py-6 px-4">
+  <div class="max-w-sm mx-auto flex justify-evenly items-start">
+    <div class="text-sm font-semibold whitespace-nowrap">
+      © Ahmad Giri Saptanu
+    </div>
+    <div class="flex gap-12 text-sm text-center">
+      <div>
+        <h4 class="font-semibold mb-2">Elsewhere</h4>
+        <ul class="space-y-1">
+          <li><a href="https://www.figma.com/@ahmadgiri" class="hover:underline">Figma</a></li>
+          <li><a href="https://github.com/AhmadGiri" class="hover:underline">Github</a></li>
+          <li><a href="#" class="hover:underline">LinkedIn</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+  <script src="js/script.js"></script>
+</body>
+</html>

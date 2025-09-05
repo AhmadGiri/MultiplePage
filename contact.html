@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Multiple Page-Contact</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-gradient-to-br from-white to-orange-50 text-gray-800">
+    <header id="navbar" class="fixed w-full flex flex-row justify-between p-4 z-50 transition-all duration-300">
+      <div class="flex items-center">
+        <img
+          class="w-10 h-10 object-contain"
+          src="img/nemtas.png"
+          alt="Logo Nemtas"
+        />
+      </div>
+
+      <nav class="hidden md:flex items-center gap-8">
+        <a
+          href="index.html"
+          class="text-slate-800 hover:text-orange-500 font-medium transition relative group"
+        >
+          Home
+          <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-orange-500 transition-all duration-300 group-hover:w-full"></span>
+        </a>
+        <a
+          href="about.html"
+          class="text-slate-800 hover:text-orange-500 font-medium transition relative group"
+        >
+          About Me
+          <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-orange-500 transition-all duration-300 group-hover:w-full"></span>
+        </a>
+        <a
+          href="gallery.html"
+          class="text-slate-800 hover:text-orange-500 font-medium transition relative group"
+        >
+          Gallery
+          <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-orange-500 transition-all duration-300 group-hover:w-full"></span>
+        </a>
+        <a
+          href="projects.html"
+          class="text-slate-800 hover:text-orange-500 font-medium transition relative group"
+        >
+          Project
+          <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-orange-500 transition-all duration-300 group-hover:w-full"></span>
+        </a>
+        <a
+          href="contact.html"
+          class="text-orange-500 hover:text-slate-800 font-medium transition relative group"
+        >
+          Contact
+          <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-orange-500 transition-all duration-300 group-hover:w-full"></span>
+        </a>
+      </nav>
+
+      <div class="md:hidden flex items-center">
+        <button id="menu-btn" class="relative z-50">
+          <div class="w-8 h-0.5 bg-gray-800 mb-1.5 transition-transform duration-300" id="bar1"></div>
+          <div class="w-8 h-0.5 bg-gray-800 mb-1.5 transition-all duration-300" id="bar2"></div>
+          <div class="w-8 h-0.5 bg-gray-800 transition-all duration-300" id="bar3"></div>
+        </button>
+      </div>
+
+      <div>
+        <img
+          class="w-12 h-12 object-contain p-1"
+          src="img/RPL.png"
+          alt="Logo RPL"
+        />
+      </div>
+    </header>
+        <div id="mobile-menu" class="fixed inset-0 bg-white z-40 flex flex-col items-center justify-center space-y-8 transition-all duration-500 transform translate-y-full">
+      <a href="index.html" class="text-2xl font-medium text-slate-800 hover:text-orange-500 transition">Home</a>
+      <a href="about.html" class="text-2xl font-medium text-slate-800 hover:text-orange-500 transition">About Me</a>
+      <a href="gallery.html" class="text-2xl font-medium text-slate-800 hover:text-orange-500 transition">Gallery</a>
+      <a href="projects.html" class="text-2xl font-medium text-slate-800 hover:text-orange-500 transition">Projects</a>
+      <a href="contact.html" class="text-2xl font-medium text-orange-500 hover:text-slate-800 transition">Contact</a>
+    </div>
+<main id="page-content" class="page-transition">
+<section class="px-6 py-24">
+  <h2 class="text-3xl font-bold text-center text-orange-600 mb-6">My Address</h2>
+  <div class="w-full max-w-4xl mx-auto rounded-2xl overflow-hidden shadow-lg">
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.1205649035364!2d106.66284447414829!3d-6.247839593740538!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69fbb74dab32bd%3A0x3a86390b50ceae84!2sJl.%20Mutiara%20No.12%2C%20RT.3%2FRW.5%2C%20Pd.%20Jagung%20Tim.%2C%20Kec.%20Serpong%20Utara%2C%20Kota%20Tangerang%20Selatan%2C%20Banten%2015326!5e0!3m2!1sid!2sid!4v1755046750749!5m2!1sid!2sid" 
+      class="w-full h-96 border-0"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </div>
+  <h2 class="text-3xl font-bold text-center text-orange-500 mt-12 mb-4">Get in Touch</h2>
+  <p class="text-center text-gray-600 mb-8">
+    I’d love to hear from you — whether it’s
+    about a project, collaboration, or just a
+    friendly hello.
+  </p>
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto text-center">
+    <div>
+      <div class="fas fa-envelope fa-3x mb-3"></div>
+      <h3 class="font-semibold text-lg text-orange-500">Email</h3>
+      <a href="#" class="text-gray-700 hover:text-orange-600">
+        girikatsu12@gmail.com
+      </a>
+    </div>
+    <div>
+      <div class="fab fa-github fa-3x mb-3"></div>
+      <h3 class="text-orange-600 font-semibold text-lg">GitHub</h3>
+      <a href="https://github.com/AhmadGiri" class="text-gray-700 hover:text-orange-600">
+        AhmadGiri
+      </a>
+    </div>
+    <div>
+      <div class="fab fa-instagram fa-3x mb-3"></div>
+      <h3 class=" text-orange-600 font-semibold text-lg">Instagram</h3>
+      <a href="https://www.instagram.com/mokuroh13?igsh=MWJjb2Z6Y2l3NjZn" class="text-gray-700 hover:text-orange-600">
+        @mokuroh13
+      </a>
+    </div>
+  </div>
+</section>
+<section class="max-w-5xl mx-auto px-6 pt-2 pb-10">
+  <h2 class="text-3xl font-bold text-orange-500 mb-6 text-center">FAQ</h2>
+  <div class="space-y-4">
+    <details class="group border border-orange-300 rounded-xl p-4">
+      <summary class="flex justify-between items-center cursor-pointer text-lg font-semibold text-gray-700">
+        What do you enjoy besides coding?
+        <span class="transition-transform group-open:rotate-180">▼</span>
+      </summary>
+      <p class="mt-2 text-gray-600">
+        I enjoy reading books, especially history and psychology. I also like playing chess and games.
+      </p>
+    </details>
+    <details class="group border border-orange-300 rounded-xl p-4">
+      <summary class="flex justify-between items-center cursor-pointer text-lg font-semibold text-gray-700">
+        How fast do you usually reply?
+        <span class="transition-transform group-open:rotate-180">▼</span>
+      </summary>
+      <p class="mt-2 text-gray-600">
+        I try to respond within 24 hours, depending on my schedule.
+      </p>
+    </details>
+    <details class="group border border-orange-300 rounded-xl p-4">
+      <summary class="flex justify-between items-center cursor-pointer text-lg font-semibold text-gray-700">
+        What are you currently learning?
+        <span class="transition-transform group-open:rotate-180">▼</span>
+      </summary>
+      <p class="mt-2 text-gray-600">
+        I’m currently learning backend development and improving my skills with Tailwind CSS to create more better projects.
+      </p>
+    </details>
+  </div>
+</section>
+</main>
+<div class="justify-center border-t border-gray-800 max-w-5xl mx-auto mb-8"></div>
+<footer class="text-orange-500 py-6 px-4">
+  <div class="max-w-sm mx-auto flex justify-evenly items-start">
+    <div class="text-sm font-semibold whitespace-nowrap">
+      © Ahmad Giri Saptanu
+    </div>
+    <div class="flex gap-12 text-sm text-center">
+      <div>
+        <h4 class="font-semibold mb-2">Elsewhere</h4>
+        <ul class="space-y-1">
+          <li><a href="https://www.figma.com/@ahmadgiri" class="hover:underline">Figma</a></li>
+          <li><a href="https://github.com/AhmadGiri" class="hover:underline">Github</a></li>
+          <li><a href="#" class="hover:underline">LinkedIn</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+  <script src="js/script.js"></script>
+</body>
+</html>

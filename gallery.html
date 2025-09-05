@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Multiple Page-Gallery</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="stylesheet" href="css/style.css">
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+</head>
+<body class="bg-gradient-to-br from-white to-orange-50 text-gray-800">
+
+      <header id="navbar" class="fixed w-full flex flex-row justify-between p-4 z-50 transition-all duration-300">
+      <div class="flex items-center">
+        <img
+          class="w-10 h-10 object-contain"
+          src="img/nemtas.png"
+          alt="Logo Nemtas"
+        />
+      </div>
+
+      <nav class="hidden md:flex items-center gap-8">
+        <a
+          href="index.html"
+          class="text-slate-800 hover:text-orange-500 font-medium transition relative group"
+        >
+          Home
+          <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-orange-500 transition-all duration-300 group-hover:w-full"></span>
+        </a>
+        <a
+          href="about.html"
+          class="text-slate-800 hover:text-orange-500 font-medium transition relative group"
+        >
+          About Me
+          <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-orange-500 transition-all duration-300 group-hover:w-full"></span>
+        </a>
+        <a
+          href="gallery.html"
+          class="text-orange-500 hover:text-slate-800 font-medium transition relative group"
+        >
+          Gallery
+          <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-orange-500 transition-all duration-300 group-hover:w-full"></span>
+        </a>
+        <a
+          href="projects.html"
+          class="text-slate-800 hover:text-orange-500 font-medium transition relative group"
+        >
+          Project
+          <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-orange-500 transition-all duration-300 group-hover:w-full"></span>
+        </a>
+        <a
+          href="contact.html"
+          class="text-slate-800 hover:text-orange-500 font-medium transition relative group"
+        >
+          Contact
+          <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-orange-500 transition-all duration-300 group-hover:w-full"></span>
+        </a>
+      </nav>
+
+      <div class="md:hidden flex items-center">
+        <button id="menu-btn" class="relative z-50">
+          <div class="w-8 h-0.5 bg-gray-800 mb-1.5 transition-transform duration-300" id="bar1"></div>
+          <div class="w-8 h-0.5 bg-gray-800 mb-1.5 transition-all duration-300" id="bar2"></div>
+          <div class="w-8 h-0.5 bg-gray-800 transition-all duration-300" id="bar3"></div>
+        </button>
+      </div>
+
+      <div>
+        <img
+          class="w-12 h-12 object-contain p-1"
+          src="img/RPL.png"
+          alt="Logo Portofolio"
+        />
+      </div>
+    </header>
+        <div id="mobile-menu" class="fixed inset-0 bg-white z-40 flex flex-col items-center justify-center space-y-8 transition-all duration-500 transform translate-y-full">
+      <a href="index.html" class="text-2xl font-medium text-slate-800 hover:text-orange-500 transition">Home</a>
+      <a href="about.html" class="text-2xl font-medium text-slate-800 hover:text-orange-500 transition">About Me</a>
+      <a href="gallery.html" class="text-2xl font-medium text-orange-500 hover:text-slate-800 transition">Gallery</a>
+      <a href="projects.html" class="text-2xl font-medium text-slate-800 hover:text-orange-500 transition">Projects</a>
+      <a href="contact.html" class="text-2xl font-medium text-slate-800 hover:text-orange-500 transition">Contact</a>
+    </div>
+<main id="page-content" class="page-transition">
+  <section class="pt-24 max-w-7xl mx-auto p-5">
+    <h2 class="text-3xl font-bold text-orange-500 text-center">My Friends</h2>
+  <div class="container swiper">
+    <div class="wrapper">
+      <ul class="card-list swiper-wrapper">
+        <li class="card-item swiper-slide">
+          <a href="https://www.instagram.com/rellz.15?igsh=MWNoOGd4OHNvc2xtYw==" class="card-link">
+            <img src="img/darrell.jpg" alt="" class="card-image">
+            <h2 class="card-title">Darrell Nararya Rahid</h2>
+          </a>
+        </li>
+        <li class="card-item swiper-slide">
+          <a href="https://www.instagram.com/rorimpandeydennisotniel?igsh=MXJreW53NmkxZThwOQ==" class="card-link">
+            <img src="img/densi.jpg" alt="" class="card-image">
+            <h2 class="card-title">Dennis Otniel Rorimpandey</h2>
+          </a>
+        </li>
+         <li class="card-item swiper-slide">
+          <a href="https://www.instagram.com/david.gvnn?igsh=OWwzM2c1cGhzcmtu" class="card-link">
+            <img src="img/jio.jpg" alt="" class="card-image">
+            <h2 class="card-title">Geovanny David W. L</h2>
+          </a>
+        </li>
+        <li class="card-item swiper-slide">
+          <a href="https://www.instagram.com/mfadlan_08?igsh=MTRzZnd2NmppcDluNQ==" class="card-link">
+            <img src="img/fadlan.jpg" alt="Fadlan" class="card-image">
+            <h2 class="card-title">Muhammad Fadlan Fadillah</h2>
+          </a>
+        </li>
+        <li class="card-item swiper-slide">
+          <a href="https://www.instagram.com/mhmmdrafarmdn?igsh=dWxnNmhncHR4dzM5" class="card-link">
+            <img src="img/3651.jpg" alt="Rafa" class="card-image">
+            <h2 class="card-title">Muhammmad Rafa Ramadan</h2>
+          </a>
+        </li>
+        <li class="card-item swiper-slide">
+          <a href="https://www.instagram.com/byan_school?igsh=MWZlcWxrNXM5OWFyNA==" class="card-link">
+            <img src="img/bihun1.jpg" alt="" class="card-image">
+            <h2 class="card-title">Fahry Byvian Perdana</h2>
+            
+          </a>
+        </li>
+        <li class="card-item swiper-slide">
+          <a href="#" class="card-link">
+            <img src="img/fizy.jpg" alt="" class="card-image">
+            <h2 class="card-title">Firzy Byvian Nugraha</h2>
+          </a>
+        </li>
+        <li class="card-item swiper-slide">
+          <a href="https://www.instagram.com/yoriline_610?igsh=ZnJndjlybXRpZDF2" class="card-link">
+            <img src="img/rona.jpg" alt="" class="card-image">
+            <h2 class="card-title">Rona Reviano</h2>
+          </a>
+        </li>
+        <li class="card-item swiper-slide">
+          <a href="https://www.instagram.com/diggiejon?igsh=MXVtbWdwZ2RzeHNjcQ==" class="card-link">
+            <img src="img/attar.jpg" alt="Dofo" class="card-image">
+            <h2 class="card-title">Attaridho Ananda Susilo</h2>
+          </a>
+        </li>
+        </ul>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-slide-button swiper-button-prev"></div>
+        <div class="swiper-slide-button swiper-button-next"></div>
+    </div>
+  </div>
+  </section>
+  <section class="pt-10">
+    <div class="wrapper2">
+    <h2 class="text-3xl font-bold text-orange-500 text-center mb-8">High School</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-2">
+    <img src="img/smk.jpg" alt="Gambar 1" class="w-auto h-auto shadow-lg object-cover rounded-lg ">
+    <img src="img/smk2.jpg" alt="Gambar 2" class="w-auto h-auto shadow-lg object-cover rounded-lg">
+  </div>
+  </div>
+  </section>
+  <section class="pt-15 max-w-7xl mx-auto p-6">
+    <h2 class="text-3xl font-bold text-orange-500 text-center">El Gato</h2>
+      <div class="container swiper">
+        <div class="wrapper">
+      <ul class="card-list swiper-wrapper">
+        <li class="card-item swiper-slide">
+          <a href="#" class="card-link2">
+            <img src="img/cat.jpg" alt="" class="card-image">
+          </a>
+        </li>
+        <li class="card-item swiper-slide">
+          <a href="#" class="card-link2">
+            <img src="img/cat1.jpg" alt="" class="card-image">
+          </a>
+        </li>
+         <li class="card-item swiper-slide">
+          <a href="#" class="card-link2">
+            <img src="img/cat2.jpg" alt="" class="card-image">
+          </a>
+        </li>
+        <li class="card-item swiper-slide">
+          <a href="#" class="card-link2">
+            <img src="img/cat3.jpg" alt="" class="card-image">
+          </a>
+        </li>
+        <li class="card-item swiper-slide">
+          <a href="#" class="card-link2">
+            <img src="img/cat4.jpg" alt="" class="card-image">
+          </a>
+        </li>
+        <li class="card-item swiper-slide">
+          <a href="#" class="card-link2">
+            <img src="img/cat5.jpg" alt="" class="card-image">
+          </a>
+        </li>
+        <li class="card-item swiper-slide">
+          <a href="#" class="card-link2">
+            <img src="img/cat6.jpg" alt="" class="card-image">
+          </a>
+        </li>
+        </ul>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-slide-button swiper-button-prev"></div>
+        <div class="swiper-slide-button swiper-button-next"></div>
+    </div>
+  </div>
+  </section>
+  <section class="py-10 pb-24">
+  <div class="wrapper2">
+    <h2 class="text-3xl font-bold text-orange-500 text-center mb-8">Random</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-2">
+    <img src="img/poto.jpg" alt="Gambar 1" class="w-auto h-auto shadow-lg object-cover rounded-sm md:rounded-lg">
+    <img src="img/pito.jpg" alt="Gambar 2" class="w-auto h-auto shadow-lg object-cover rounded-sm md:rounded-lg ">
+  </div>
+  </div>
+  </section>
+  </main>
+  <div class="justify-center border-t border-gray-800 max-w-5xl mx-auto mb-8"></div>
+<footer class="text-orange-500 py-6 px-4">
+  <div class="max-w-sm mx-auto flex justify-evenly items-start">
+    <div class="text-sm font-semibold whitespace-nowrap">
+      © Ahmad Giri Saptanu
+    </div>
+    <div class="flex gap-12 text-sm text-center">
+      <div>
+        <h4 class="font-semibold mb-2">Elsewhere</h4>
+        <ul class="space-y-1">
+          <li><a href="https://www.figma.com/@ahmadgiri" class="hover:underline">Figma</a></li>
+          <li><a href="https://github.com/AhmadGiri" class="hover:underline">Github</a></li>
+          <li><a href="#" class="hover:underline">LinkedIn</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  
+  <script src="js/script.js"></script>
+  <script>
+new Swiper('.wrapper', {
+  loop: true,
+  spaceBetween: 30,
+
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+    dynamicBullets: true,
+  },
+
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  
+  breakpoints: {
+    0: {
+      slidesPerView : 1
+    },
+    768: {
+      slidesPerView : 2
+    },
+    1024: {
+      slidesPerView : 3
+    },
+  }
+});
+  </script>
+</body>
+</html>
